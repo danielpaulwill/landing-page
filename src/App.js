@@ -1,12 +1,35 @@
 import './App.css';
+import ReactDom from "react-dom"
+import { Route, BrowserRouter } from "react-router-dom";
+import PlaceHolder from './PlaceHolder';
+import Home from './Home';
 
 function App() {
+  // function handleClick(e) {
+  //   console.log(e.target)
+  // }
   return (
-    <div id='mainContainer'>
-      <img className='appsContainer' src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=980:*"></img>
-      <img className='appsContainer' src="https://cdn.cnn.com/cnnnext/dam/assets/201030094143-stock-rhodesian-ridgeback-exlarge-169.jpg"></img>
-      <div className='appsContainer'></div>
-      <div className='appsContainer'></div>
+    <div>
+      <h1 id='header'>Daniel Williams</h1>
+      <Route path="/starbucks-caffeine">
+        <PlaceHolder />
+      </Route>
+      <Route path="/crypto-finder">
+
+      </Route>
+      <Route path="/wayfarer">
+
+      </Route>
+
+      <Route exact path="/">
+        <Home />
+      </Route>
+
+      <div id='footer'>
+        <p>placeholder1</p>
+        <p>placeholder2</p>
+        <p>placeHolder3</p>
+      </div>
     </div>
   );
 }

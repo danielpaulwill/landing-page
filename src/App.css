@@ -1,16 +1,15 @@
 html {
   background-image: url("https://gfycat.com/accuratescrawnyankole");
-  background-color: gray;
+  background-color: #D2CABF;
 }
 
 #mainContainer {
   margin: 10px auto;
   height: 700px;
-  width: 525px;
+  width: 825px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* background-color: red; */
   align-content: center;
 }
 
@@ -31,13 +30,51 @@ html {
 .appsContainer {
   margin: 10px;
   height: 200px;
-  width: 500px;
+  width: 800px;
   border-radius: 35px;
   object-fit: cover;
 }
 
-.appsContainer:hover {
-  box-shadow: 0 0 20px red; 
-  transition: box-shadow 300ms;
+#starbucksAppTile {
+  position: relative;
+  margin: 40px 10px;
+  height: 200px;
+  width: 800px;
+}
+
+#starbucksAppTile img {
   cursor: pointer;
+  border-radius: 35px;
+  background-color: #D4E9E2;
+  position:absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#starbucksAppTile img.top:hover {
+  opacity: 0;
+}
+
+#cryptoAppTile {
+  position: relative;
+  margin: 40px 10px;
+  height: 200px;
+  width: 800px;
+}
+
+#cryptoAppTile img {
+  cursor: pointer;
+  border-radius: 35px;
+  background-color: #D4E9E2;
+  position:absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#cryptoAppTile img.top:hover {
+  opacity: 0;
 }
